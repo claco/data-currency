@@ -4,6 +4,7 @@ Makefile.PL
 MANIFEST
 MANIFEST.SKIP
 META.yml
+README
 t/basic.t
 t/currency.t
 t/manifest.t
