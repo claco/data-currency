@@ -1,0 +1,13 @@
+Changes
+lib/Data/Currency.pm
+Makefile.PL
+MANIFEST
+MANIFEST.SKIP
+META.yml
+t/basic.t
+t/currency.t
+t/manifest.t
+t/pod_coverage.t
+t/pod_spelling.t
+t/pod_syntax.t
+TODO
