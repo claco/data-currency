@@ -9,7 +9,7 @@ use overload
     fallback => 1;
 use vars qw/$VERSION/;
 
-$VERSION = '0.01';
+$VERSION = '0.02';
 
 BEGIN {
     use base qw/Class::Accessor::Grouped/;

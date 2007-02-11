@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name: Data::Currency
-version: 0.01
+version: 0.02
 abstract: Container class for currency conversion/formatting
 license: perl
 generated_by: ExtUtils::MakeMaker version 6.30_01
