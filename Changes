@@ -2,6 +2,7 @@ Revision history for Data::Currency
 
 0.03
     - Added workaround for name returning Candian in older Locale::Currency
+    - Imports Locale::Currency::Format constants so eval on strings is happy
 
 0.02 Sun Feb 11 15:37:5 2007
     - Fixed test skip count when Test::MockObject isn't installed
