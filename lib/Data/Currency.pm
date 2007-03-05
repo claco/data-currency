@@ -9,7 +9,7 @@ use overload
     fallback => 1;
 use vars qw/$VERSION/;
 
-$VERSION = '0.02';
+$VERSION = '0.03';
 
 BEGIN {
     use base qw/Class::Accessor::Grouped/;
@@ -191,7 +191,7 @@ Data::Currency - Container class for currency conversion/formatting
     print $price->format;    # FMT_SYMBOL
     print $price->as_string; # 1.20 USD
     print $price->as_string('FMT_SYMBOL'); # $1.20
-    
+
     print 'Your price in Canadian Dollars is: ';
     print $price->convert('CAD')->value;
 
@@ -201,7 +201,7 @@ The Data::Currency module provides basic currency formatting and conversion:
 
     my $price = 1.23;
     my $currency = Data::Currency->new($price);
-    
+
     print $currency->convert('CAD')->as_string;
 
 Each Data::Currency object will stringify to the original value except in string
@@ -221,7 +221,7 @@ To create a new Data::Currency object, simply call C<new> and pass in the
 price to be formatted:
 
     my $currency = Data::Currency->new(10.23);
-    
+
     my $currency = Data::Currency->new({
         value  => 1.23,
         code   => 'CAD',
@@ -237,10 +237,10 @@ You can set the defaults by calling the code/format values as class methods:
 
     Data::Currency->code('USD');
     Data::Currency->format('FMT_COMMON');
-    
+
     my $currency = Data::Currency->new(1.23);
     print $currency->as_string; # $1.23
-    
+
     my $currency = Data::Currency->new(1.23, 'CAD', 'FMT_STANDARD');
     print $currency->as_string; # 1.23 CAD
 
@@ -315,7 +315,7 @@ This method dies if the specified class can not be loaded.
 
 =back
 
-Gets/sets the format to be used when C<as_string> is called. See 
+Gets/sets the format to be used when C<as_string> is called. See
 L<Locale::Currency::Format|Locale::Currency::Format> for the available
 formatting options.
 

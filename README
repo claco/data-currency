@@ -10,7 +10,7 @@ SYNOPSIS
         print $price->format;    # FMT_SYMBOL
         print $price->as_string; # 1.20 USD
         print $price->as_string('FMT_SYMBOL'); # $1.20
-    
+
         print 'Your price in Canadian Dollars is: ';
         print $price->convert('CAD')->value;
 
@@ -20,7 +20,7 @@ DESCRIPTION
 
         my $price = 1.23;
         my $currency = Data::Currency->new($price);
-    
+
         print $currency->convert('CAD')->as_string;
 
     Each Data::Currency object will stringify to the original value except
@@ -35,7 +35,7 @@ CONSTRUCTOR
     price to be formatted:
 
         my $currency = Data::Currency->new(10.23);
-    
+
         my $currency = Data::Currency->new({
             value  => 1.23,
             code   => 'CAD',
@@ -53,10 +53,10 @@ CONSTRUCTOR
 
         Data::Currency->code('USD');
         Data::Currency->format('FMT_COMMON');
-    
+
         my $currency = Data::Currency->new(1.23);
         print $currency->as_string; # $1.23
-    
+
         my $currency = Data::Currency->new(1.23, 'CAD', 'FMT_STANDARD');
         print $currency->as_string; # 1.23 CAD
 
