@@ -1,5 +1,10 @@
 Revision history for Data::Currency
 
+0.04000 Thur May 03 20:37:54
+    - Converted to Module::Install for no good reason. Everyone's doing it.
+    - Changed version to 0.xxyyy to make things like FBSD port versions happier.
+        (and because everyone's doing it)
+
 0.03 Mon Mar 05 18:54:25 2007
     - Added workaround for name returning Candian in older Locale::Currency
     - Imports Locale::Currency::Format constants so eval on strings is happy

@@ -17,6 +17,6 @@ BEGIN {
 
 ok_manifest({
     exclude => ['/t/var', '/cover_db'],
-    filter  => [qr/\.svn/, qr/cover/],
+    filter  => [qr/\.svn/, qr/cover/, qr/Build.PL/],
     bool    => 'or'
 });
