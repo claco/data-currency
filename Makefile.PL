@@ -18,7 +18,10 @@ requires 'Scalar::Util'             => '0';
 tests('t/*.t');
 clean_files "Data-Currency-* t/var";
 
-system 'pod2text lib/Data/Currency.pm > README';
+eval {
+    system 'pod2text lib/Data/Currency.pm > README';
+};
+
 
 auto_install;
 WriteAll;
