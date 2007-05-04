@@ -1,4 +1,6 @@
 # $Id$
+use strict;
+use warnings;
 use inc::Module::Install;
 
 name 'Data-Currency';
@@ -15,6 +17,8 @@ requires 'Scalar::Util'             => '0';
 
 tests('t/*.t');
 clean_files "Data-Currency-* t/var";
+
+system 'pod2text lib/Data/Currency.pm > README';
 
 auto_install;
 WriteAll;
