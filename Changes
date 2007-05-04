@@ -1,6 +1,9 @@
 Revision history for Data::Currency
 
-0.04000 Thur May 03 20:37:54
+0.04001 Fri May 04 19:02:26 2007
+    - Finishing out the brainwashing. No code changes.
+
+0.04000 Thur May 03 20:37:54 2007
     - Converted to Module::Install for no good reason. Everyone's doing it.
     - Changed version to 0.xxyyy to make things like FBSD port versions happier.
         (and because everyone's doing it)
