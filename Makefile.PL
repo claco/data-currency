@@ -1,7 +1,7 @@
 # $Id$
 use strict;
 use warnings;
-use inc::Module::Install;
+use inc::Module::Install 0.65;
 
 name 'Data-Currency';
 license 'perl';
@@ -15,13 +15,12 @@ requires 'Locale::Currency'         => '2.07';
 requires 'Locale::Currency::Format' => '1.22';
 requires 'Scalar::Util'             => '0';
 
-tests('t/*.t');
+tests "t/*.t t/*/*.t";
 clean_files "Data-Currency-* t/var";
 
 eval {
     system 'pod2text lib/Data/Currency.pm > README';
 };
-
 
 auto_install;
 WriteAll;
