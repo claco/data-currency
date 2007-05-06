@@ -1,5 +1,7 @@
 Revision history for Data::Currency
 
+    - Changed prereq back to 5.6.1
+
 0.04002 Fri May 04 21:43:14 2007
     - Upgraded to Module::Install 0.65
 

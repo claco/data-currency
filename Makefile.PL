@@ -5,7 +5,7 @@ use inc::Module::Install 0.65;
 
 name 'Data-Currency';
 license 'perl';
-perl_version '5.008001';
+perl_version '5.006001';
 all_from 'lib/Data/Currency.pm';
 
 requires 'Class::Accessor::Grouped' => '0.03';
